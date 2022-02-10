@@ -22,5 +22,5 @@ jobs:
     - name: Download a Build Artifact
       uses: actions/download-artifact@v2.1.0
       with:
-        name: eureka-server
+        name: package
         path: C:\Users\hp\Desktop\Eureka\Eureka-serer
