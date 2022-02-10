@@ -20,7 +20,7 @@ jobs:
         name: Package
         path: build/libs
     - name: Download a Build Artifact
-      uses: actions/download-artifact@v2.1.0
+      uses: actions/download-artifact@v2
       with:
         name: package
         path: C:\Users\hp\Desktop\Eureka\Eureka-serer
