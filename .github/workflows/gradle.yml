@@ -1,7 +1,8 @@
 name: Java CI with Gradle
 
-on: [push]
-    
+on:
+  push:
+    branches: [ main ]
 
 jobs:
   build:
@@ -15,6 +16,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+    - name: make gradlew executable
+      run: chmod +x ./gradlew
     - name: Build with Gradle
       run: ./gradlew build
-      
